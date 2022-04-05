@@ -1,0 +1,79 @@
+body {
+    background: #0094ff;
+    height: 100%;
+    font-family: "Itim";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 120px;
+    color: #ffffff;
+}
+
+.letters-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-left: 5%;
+    margin-top: 52px;
+    width: 90%;
+    height: 13%;
+}
+
+.rectangle {
+    position: relative;
+    width: 7%;
+    height: 95%;
+    border: 5px solid white;
+}
+
+.rectangle::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.single-letter {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.letters-container[height="big"] {
+    height: 20%;
+}
+
+.letters-container[width="small"] {
+    margin-left: 15%;
+    width: 70%;
+}
+
+.rectangle[width="big"] {
+    width: 30%;
+}
+
+#green {
+    background: #0def08;
+}
+
+#red {
+    background: #ef2408;
+}
+
+#blue {
+    background: #0864ef;
+}
+
+#magenta {
+    background: #b308ef;
+}
+
+#yellow {
+    background: #eaef08;
+}
+
+#light-green {
+    background: #30e7b0;
+}
